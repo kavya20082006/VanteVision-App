@@ -1,0 +1,17 @@
+<!doctype html>
+<title>Vante Vision Result</title>
+<h1>Here is your stylized image!</h1>
+
+<div style="display: flex; justify-content: space-around; width: 80%; margin: auto;">
+    <div style="text-align: center;">
+        <h2>Original Image</h2>
+        <img src="{{ url_for('static', filename='uploads/' + original_image_name) }}" alt="Original Image" style="max-width: 450px;">
+    </div>
+    <div style="text-align: center;">
+        <h2>Stylized Image</h2>
+        <img src="{{ url_for('static', filename='uploads/' + stylized_image_name) }}" alt="Stylized Image" style="max-width: 450px;">
+    </div>
+</div>
+
+<br><br>
+<a href="/">Go back to upload another photo</a>

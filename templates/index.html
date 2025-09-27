@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vante Vision - Upload</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f2f5;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #6c63ff;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            display: inline-block;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        input[type="file"] {
+            margin: 15px 0;
+        }
+        input[type="submit"] {
+            background-color: #6c63ff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #574fd2;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 Vante Vision</h1>
+    <p>Upload a content image and a style image to create your own stylized masterpiece.</p>
+    <form method="post" action="/upload" enctype="multipart/form-data">
+        <label for="content_photo"><strong>Content Image:</strong></label><br>
+        <input type="file" name="content_photo" id="content_photo" required><br><br>
+
+        <label for="style_photo"><strong>Style Image:</strong></label><br>
+        <input type="file" name="style_photo" id="style_photo" required><br><br>
+
+        <input type="submit" value="Stylize">
+    </form>
+</body>
+</html>
