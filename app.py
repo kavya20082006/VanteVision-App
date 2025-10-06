@@ -14,7 +14,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Load the TensorFlow model
-MODEL_PATH = r"C:\Users\HP\OneDrive\Desktop\VANTEVISION\arbitrary-image-stylization-v1-tensorflow1-256-v2"
+MODEL_PATH = "arbitrary-image-stylization-v1-tensorflow-2"
 model = tf.saved_model.load(MODEL_PATH)
 
 @app.route('/')
